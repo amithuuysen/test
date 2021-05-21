@@ -109,6 +109,11 @@ button:hover
   color: crimson;
 }
 @media screen and (max-width: 780px) {
+  .logo {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 780px) {
   .menu-bar, .nav, .logo {
     padding-top: 0;
     display: block;
