@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Personal Blog - Amithu Uysen </title>
+    <link rel="stylesheet" href="index.css"/>
+    <script type="text/javascript">
+      function fun_home()
+      {
+        document.getElementById('iframe').src="home.html";
+      }
+      function fun_about()
+      {
+        document.getElementById('iframe').src="index.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <div class="logo"><a href="#">Portfo<span class="lio">lio.</span></a></div>
+      <nav class="nav">
+        <a onclick="fun_home()">Home</a>
+        <a onclick="fun_about()">About</a>
+        <a onclick="fun_skills()">Skills</a>
+        <a onclick="fun_projects()">Projects</a>
+        <a onclick="fun_education()">Education</a>
+      </nav>
+    </div>
+    <!--<div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Amithu Uysen</div>
+        <div class="text-3">And I'm a <span class="typing">Data Analyst</span></div>
+        <button type="button" name="button">Hire Me</button>
+    </div>-->
+    <div class="nav-det">
+      <iframe class="iframe" id="iframe" src="home.html"></iframe>
+    </div>
+  </body>
+</html>

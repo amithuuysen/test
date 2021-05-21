@@ -1,0 +1,144 @@
+*
+{
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html
+{
+  height: 100%;
+  overflow: hidden;
+  background: url(back.jpg) no-repeat center;
+  background-size: cover,contain;
+  background-attachment: fixed;
+}
+.menu-bar
+{
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+}
+.logo
+{
+  width: 30%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+.logo .lio
+{
+  color: crimson;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+.nav
+{
+  width: 70%;
+  padding-top: 15px;
+  text-align: right;
+  height: auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+a:hover
+{
+  cursor: pointer;
+  color: crimson;
+}
+.nav-det
+{
+  position: relative;
+  padding: 30px 30px;
+  width: 100%;
+  height: 80%;
+
+}
+.iframe
+{
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.text-1
+{
+  font-size: 25px;
+}
+.text-2
+{
+  margin-top: 10px;
+  font-size: 70px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.text-3
+{
+  margin-top: 10px;
+  font-size: 30px;
+}
+button
+{
+  height: 50px;
+  width: 150px;
+  margin-top: 25px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: crimson;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+button:hover
+{
+  background-color: transparent;
+  color: crimson;
+}
+@media screen and (max-width: 780px) {
+  .menu-bar, .nav, .logo {
+    padding-top: 0;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a{
+    color: crimson;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a:hover{
+    color: white;
+  }
+}
+@media screen and (max-width: 780px) {
+  body,html{
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 780px) {
+  .iframe{
+    position: sticky;
+  }
+}
