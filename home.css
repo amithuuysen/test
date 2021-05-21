@@ -33,6 +33,7 @@ body,html
 .nav
 {
   width: 70%;
+  padding-top: 15px;
   text-align: right;
   height: auto;
   font-family: 'Ubuntu', sans-serif;
@@ -94,6 +95,7 @@ button:hover
 }
 @media screen and (max-width: 780px) {
   .menu-bar, .nav, .logo {
+    padding-top: 0;
     display: block;
     width: 100%;
   }
@@ -107,7 +109,12 @@ button:hover
 }
 @media screen and (max-width: 780px) {
   .menu-bar .nav a{
-    background-color: crimson;
+    color: crimson;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a:hover{
+    color: white;
   }
 }
 @media screen and (max-width: 780px) {
