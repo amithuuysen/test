@@ -1,0 +1,117 @@
+*
+{
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html
+{
+  height: 100%;
+  background: url(back.jpg) no-repeat center;
+  background-size: cover,contain;
+  background-attachment: fixed;
+}
+.menu-bar
+{
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+}
+.logo
+{
+  width: 30%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+.logo .lio
+{
+  color: crimson;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+.nav
+{
+  width: 70%;
+  text-align: right;
+  height: auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+a:hover
+{
+  color: crimson;
+}
+
+.home-content
+{
+  padding: 30px;
+  color: white;
+  font-family: verdana,sans-serif,Comic;
+}
+.text-1
+{
+  font-size: 25px;
+}
+.text-2
+{
+  margin-top: 10px;
+  font-size: 70px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.text-3
+{
+  margin-top: 10px;
+  font-size: 30px;
+}
+button
+{
+  height: 50px;
+  width: 150px;
+  margin-top: 25px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: crimson;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+button:hover
+{
+  background-color: transparent;
+  color: crimson;
+}
+@media screen and (max-width: 780px) {
+  .menu-bar, .nav, .logo {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu-bar .nav a{
+    background-color: crimson;
+  }
+}
+@media screen and (max-width: 780px) {
+  .home-content{
+    text-align: center;
+  }
+}
