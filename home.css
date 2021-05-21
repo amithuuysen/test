@@ -44,3 +44,19 @@ button:hover
   .home-content{
     text-align: center;
   }
+}
+@media screen and (max-width: 780px) {
+  .text-1{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .text-2{
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .text-3{
+    font-size: 25px;
+  }
+}
