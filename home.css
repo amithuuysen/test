@@ -40,3 +40,7 @@ button:hover
   background-color: transparent;
   color: crimson;
 }
+@media screen and (max-width: 780px) {
+  .home-content{
+    text-align: center;
+  }
