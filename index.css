@@ -261,6 +261,12 @@ span
     display: block;
 }
 @media screen and (max-width: 780px) {
+  .about-content .footer
+  {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 780px) {
   .about-det{
     padding: 10px;
     font-size: 20px;
@@ -287,13 +293,15 @@ span
     font-size: 15px;
     padding: 0;
 }
+/*
 @media screen and (max-width: 580px) {
   .about-det .about-name{
-    font-size: 15px;
+    font-size: 16px;
     padding: 0;
 }
 @media screen and (max-width: 580px) {
   .about-det p{
-    font-size: 13px;
+    font-size: 15px;
     padding: 0;
 }
+*/
