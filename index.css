@@ -3,17 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body,html
 {
-  height: 100%;
-  overflow: hidden;
   background: url(background.jpg) no-repeat center;
   background-size: cover,contain;
   background-attachment: fixed;
+  margin: 0;
 }
 .menu-bar
 {
-  padding: 20px 0;
+  padding: 30px 60px;
   width: 100%;
   display: flex;
 }
@@ -47,35 +61,39 @@ a
   font-weight: bold;
   font-family: sans-serif;
 }
-a:hover
+.nav a:hover
 {
   cursor: pointer;
   color: crimson;
 }
-.nav-det
+.home-content
 {
-  position: relative;
-  padding: 30px 30px
-  border-style: solid;
-  border-width: 3px;
-  border-color: green;
-  width: 100%;
-  height: 80%;
-
+  margin: 10%;
+  color: white;
+  font-family: verdana,sans-serif,Comic;
 }
-.iframe
+.text-1
 {
-  position: sticky;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 80%;
-  border: none;
+  font-size: 25px;
 }
-
-button
+.text-2
+{
+  margin-top: 15px;
+  font-size: 70px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.text-3
+{
+  margin-top: 15px;
+  font-size: 30px;
+}
+.typing
+{
+  font-weight: bold;
+  color: crimson;
+}
+.hireme
 {
   height: 50px;
   width: 150px;
@@ -90,14 +108,117 @@ button
   font-weight: bold;
   font-family: verdana,sans-serif,Comic;
 }
-button:hover
+.hireme:hover
 {
   background-color: transparent;
   color: crimson;
 }
+
+.about-content
+{
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+  background: white;
+  font-family: verdana,sans-serif,serif;
+}
+.about-content h1
+{
+  margin: 0;
+  padding-top: 80px;
+  font-size: 40px;
+  text-align: center;
+}
+.about-content .footer
+{
+  padding-top: 20px;
+  padding-bottom: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+}
+.about-pd
+{
+  display: flex;
+}
+.about-pd img
+{
+  width: 35%;
+  border-radius: 5px;
+  border: solid 2px black;
+
+}
+.about-det
+{
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+}
+.about-det .about-name
+{
+  font-weight: bold;
+  font-size: 25px;
+}
+span
+{
+  color: crimson;
+}
+.about-det p
+{
+  padding-top: 10px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.downloadcv
+{
+  height: 50px;
+  width: 210px;
+  margin-top: 25px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: crimson;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: verdana,sans-serif,Comic;
+}
+.downloadcv:hover
+{
+  background-color: transparent;
+  color: crimson;
+}
+/*Personal Details--Mobile Viewport*/
+
+@media screen and (max-width: 780px) {
+  .home-content{
+    margin: 5% 0 0 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  .text-1{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .text-2{
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .text-3{
+    font-size: 25px;
+  }
+}
+
+/* Menu-bar -- Mobile Viewport*/
+
 @media screen and (max-width: 780px) {
   body,html{
-    overflow: visible;
   }
 }
 @media screen and (max-width: 780px) {
@@ -107,7 +228,7 @@ button:hover
 }
 @media screen and (max-width: 780px) {
   .menu-bar, .nav, .logo {
-    padding-top: 0;
+    padding: 0;
     display: block;
     width: 100%;
   }
@@ -133,10 +254,44 @@ button:hover
     border-color: crimson;
   }
 }
+@media screen and (max-width: 780px) {
+  .about-pd{
+    display: block;
+}
+@media screen and (max-width: 780px) {
+  .about-det{
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
 
 @media screen and (max-width: 780px) {
-  .iframe{
-    height: 100%;
-    position: sticky;
+  .about-content img{
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+@media screen and (max-width: 780px) {
+  .about-det .about-name{
+    font-size: 20px;
+    padding: 0;
+}
+@media screen and (max-width: 780px) {
+  .about-det p{
+    font-size: 15px;
+    padding: 0;
+}
+@media screen and (max-width: 580px) {
+  .about-det .about-name{
+    font-size: 15px;
+    padding: 0;
+}
+@media screen and (max-width: 580px) {
+  .about-det p{
+    font-size: 13px;
+    padding: 0;
 }
