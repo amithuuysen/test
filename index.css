@@ -20,6 +20,7 @@
 
 body,html
 {
+  scroll-behavior: smooth;
   background: url(background.jpg) no-repeat center;
   background-size: cover,contain;
   background-attachment: fixed;
@@ -144,6 +145,7 @@ a
 }
 .about-pd img
 {
+  margin: 30px;
   width: 35%;
   border-radius: 5px;
   border: solid 2px black;
