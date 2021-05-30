@@ -17,9 +17,31 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.scroll
+{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 99;
+  padding: 15px 30px;
+  width: 100%;
+  display: flex;
+  background-color: crimson;
+  color: white;
+  transition: 0.4s;
+}
+.scroll .logo .lio
+{
+  color: white;
+}
+.scroll .nav a:hover
+{
+  color: white;
+}
 html
 {
   scroll-behavior: smooth;
+
 }
 body
 {
@@ -30,6 +52,8 @@ body
 }
 .menu-bar
 {
+  position: fixed;
+  top: 0;
   padding: 30px 60px;
   width: 100%;
   display: flex;
@@ -39,14 +63,14 @@ body
   width: 30%;
   font-size: 35px;
   font-weight: bold;
-  font-family: verdana,sans-serif,Comic;
+  font-family: 'Ubuntu',sans-serif;
 }
 .logo .lio
 {
   color: crimson;
   font-size: 35px;
   font-weight: bold;
-  font-family: verdana,sans-serif,Comic;
+  font-family: 'Ubuntu',sans-serif;
 }
 .nav
 {
@@ -62,7 +86,7 @@ a
   color: white;
   padding: 15px;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Ubuntu',sans-serif;
 }
 .nav a:hover
 {
@@ -71,9 +95,10 @@ a
 }
 .home-content
 {
-  margin: 10%;
+  padding: 20%;
+  height: 80vh;
   color: white;
-  font-family: verdana,sans-serif,Comic;
+  font-family: 'Ubuntu',sans-serif;
 }
 .text-1
 {
@@ -83,7 +108,6 @@ a
 {
   margin-top: 15px;
   font-size: 70px;
-  font-variant: small-caps;
   font-weight: bold;
 }
 .text-3
@@ -109,12 +133,13 @@ a
   color: white;
   font-size: 20px;
   font-weight: bold;
-  font-family: verdana,sans-serif,Comic;
+  font-family: 'Ubuntu',sans-serif;
 }
 .hireme:hover
 {
   background-color: transparent;
   color: crimson;
+  transition: 0.5s;
 }
 
 .about-content
@@ -123,7 +148,7 @@ a
   height: 100%;
   margin-top: 20%;
   background: white;
-  font-family: verdana,sans-serif,serif;
+  font-family: 'Ubuntu',sans-serif;
 }
 .about-content h1
 {
@@ -135,7 +160,7 @@ a
 .about-content .footer
 {
   padding-top: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
   color: crimson;
@@ -171,8 +196,8 @@ span
 }
 .about-det p
 {
+  font-family: 'Ubuntu',sans-serif;
   padding-top: 10px;
-  font-weight: lighter;
   font-size: 18px;
 }
 .downloadcv
@@ -188,122 +213,166 @@ span
   color: white;
   font-size: 20px;
   font-weight: bold;
-  font-family: verdana,sans-serif,Comic;
+  font-family: 'Ubuntu',sans-serif;
+  transition: 0.5s;
 }
 .downloadcv:hover
 {
   background-color: transparent;
   color: crimson;
 }
+
+.projects-content
+{
+  font-family: 'ubuntu',sans-serif;;
+  background-color: black;
+  color:white;
+}
+.projects-content h1
+{
+  margin: 0;
+  padding-top: 80px;
+  font-size: 40px;
+  text-align: center;
+}
+.projects-content .footer
+{
+  padding-top: 20px;
+  padding-bottom: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+}
+.projects-content .projects-det
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+.projects-content .projects-det .p1, .projects-content .projects-det .p2,
+.projects-content .projects-det .p3
+{
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #222;
+
+}
+.projects-content .projects-det .p1:hover,
+.projects-content .projects-det .p2:hover,
+.projects-content .projects-det .p3:hover
+{
+  background-color: crimson;
+
+
+}
+.projects-content .projects-det img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.projects-content .projects-det
+{
+  text-align: center;
+}
 /*Personal Details--Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
-  .home-content{
+  .menu-bar
+  {
+    position: inherit;
+  }
+  .home-content
+  {
+    padding: 0;
+    height: 40vh;
     margin: 5% 0 0 0;
     text-align: center;
   }
-}
-@media screen and (max-width: 780px) {
-  .text-1{
+  .text-1
+  {
     font-size: 20px;
   }
-}
-@media screen and (max-width: 780px) {
-  .text-2{
+  .text-2
+  {
     font-size: 55px;
   }
-}
-@media screen and (max-width: 780px) {
-  .text-3{
+  .text-3
+  {
     font-size: 25px;
   }
+
 }
 
 /* Menu-bar -- Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
-  body,html{
-  }
-}
-@media screen and (max-width: 780px) {
-  .logo {
+  .logo
+  {
     text-align: center;
   }
-}
-@media screen and (max-width: 780px) {
-  .menu-bar, .nav, .logo {
+  .menu-bar, .nav, .logo
+  {
     padding: 0;
     display: block;
     width: 100%;
   }
-}
-@media screen and (max-width: 780px) {
-  .menu-bar .nav a{
+  .menu-bar .nav a
+  {
     display: block;
     width: 100%;
     text-align: center;
     background-color: crimson;
   }
-}
-@media screen and (max-width: 780px) {
-  .menu-bar .nav a{
+  .menu-bar .nav a
+  {
     border-style: solid;
     border-width: 1px;
     border-color: #000;
   }
-}
-@media screen and (max-width: 780px) {
-  .menu-bar .nav a:hover{
+  .menu-bar .nav a:hover
+  {
     background: transparent;
     border-color: crimson;
   }
 }
-@media screen and (max-width: 780px) {
-  .about-pd{
+@media screen and (max-width: 980px) {
+  .about-pd
+  {
     display: block;
+  }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 980px) {
   .about-content .footer
   {
     padding-bottom: 0px;
   }
-}
-@media screen and (max-width: 780px) {
-  .about-det{
+  .about-det
+  {
     padding: 10px;
     font-size: 20px;
     display: block;
     text-align: center;
     margin: 0;
-}
-
-@media screen and (max-width: 780px) {
-  .about-content img{
+  }
+  .about-content img
+  {
     float: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media screen and (max-width: 780px) {
-  .about-det .about-name{
+  .about-det .about-name
+  {
     font-size: 20px;
     padding: 0;
+  }
+  .about-det p
+  {
+    font-size: 17px;
+    padding: 10px;
+    text-align: justify;
+  }
 }
-@media screen and (max-width: 780px) {
-  .about-det p{
-    font-size: 15px;
-    padding: 0;
-}
-/*
-@media screen and (max-width: 580px) {
-  .about-det .about-name{
-    font-size: 16px;
-    padding: 0;
-}
-@media screen and (max-width: 580px) {
-  .about-det p{
-    font-size: 15px;
-    padding: 0;
-}
-*/

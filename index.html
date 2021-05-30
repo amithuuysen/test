@@ -4,28 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Personal Blog - Amithu Uysen </title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link rel="stylesheet" href="index.css"/>
-    <script type="text/javascript">
-      function fun_home()
-      {
-
-      }
-      function fun_about()
-      {
-
-      }
-    </script>
   </head>
   <body id="body">
     <div class="menu-bar" id="menu">
       <div class="logo"><a>Portfo<span class="lio">lio.</span></a></div>
       <nav class="nav">
-        <a href="#menu">Home</a>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a onclick="fun_skills()">Skills</a>
-        <a onclick="fun_projects()">Projects</a>
-        <a onclick="fun_education()">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
       </nav>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+          {
+            document.getElementById("menu").className = "scroll";
+          }
+          else
+          {
+            document.getElementById("menu").className = "menu-bar";
+          }
+        }
+      </script>
     </div>
     <section class="home-content" id="home">
         <div class="text-1">Hello, my name is</div>
@@ -33,9 +38,10 @@
         <div class="text-3">And I'm a <span class="typing">Data Analyst</span></div>
         <button type="button" name="button" class="hireme">Hire Me</button>
     </section>
+
     <section class="about-content" id="about">
       <h1>About me</h1>
-      <div class="footer">--who i am--</div>
+      <div class="footer">--  who i am  --</div>
       <div class="about-pd">
         <img src="photo.jpg" alt="">
         <div class="about-det">
@@ -51,6 +57,36 @@
           </p>
           <button type="button" name="button" class="downloadcv">Download CV</button>
         </div>
+      </div>
+    </section>
+
+    <section class="projects-content" id="projects">
+      <h1>My Projects</h1>
+      <div class="footer">--  What i done  --</div>
+      <div class="projects-det">
+        <div class="p1">
+          <img src="face.png" alt="">
+          <h2>Face Recognition</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+            sit laboriosam voluptatem nisi delectus. Facere explicabohic</p>
+        </div>
+        <div class="p2">
+          <img src="face.png" alt="">
+          <h2>Face Recognition</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+            sit laboriosam voluptatem nisi delectus. Facere explicabohic</p>
+        </div>
+        <div class="p3">
+          <img src="face.png" alt="">
+          <h2>Face Recognition</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+            sit laboriosam voluptatem nisi delectus. Facere explicabohic</p>
+        </div>
+      </div>
+      <div class="" style="height:20vh;">
       </div>
     </section>
   </body>
