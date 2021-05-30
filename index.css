@@ -227,6 +227,8 @@ span
   font-family: 'ubuntu',sans-serif;;
   background-color: black;
   color:white;
+  height: 96vh;
+  width: 100%;
 }
 .projects-content h1
 {
@@ -374,5 +376,13 @@ span
     font-size: 17px;
     padding: 10px;
     text-align: justify;
+  }
+}
+
+@media screen and (max-width:780px)
+{
+  .projects-content .projects-det
+  {
+    display: inline-block;
   }
 }
