@@ -17,27 +17,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.scroll
-{
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  z-index: 99;
-  padding: 15px 30px;
-  width: 100%;
-  display: flex;
-  background-color: crimson;
-  color: white;
-  transition: 0.4s;
-}
-.scroll .logo .lio
-{
-  color: white;
-}
-.scroll .nav a:hover
-{
-  color: white;
-}
 html
 {
   scroll-behavior: smooth;
@@ -50,34 +29,66 @@ body
   background-attachment: fixed;
   margin: 0;
 }
+.toggle-btn
+{
+  width: 35px;
+  right: 30px;
+  top: 20px;
+  position: absolute;
+  display: none;
+}
+.toggle-btn span
+{
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  float: left;
+  margin-bottom: 8px;
+  background-color: white;
+}
+.menu-bar-fix
+{
+  background: crimson;
+  position:fixed;
+  padding: 15px 30px;
+  width: 100%;
+  display: flex;
+  transform: 1s;
+}
+ .menu-bar-fix .logo .lio
+ {
+   color: white;
+ }
+ .menu-bar-fix nav a:hover
+ {
+   color: white;
+ }
 .menu-bar
 {
   position: fixed;
-  top: 0;
   padding: 30px 60px;
   width: 100%;
   display: flex;
 }
-.logo
+.menu-bar .logo, .menu-bar-fix .logo
 {
   width: 30%;
   font-size: 35px;
   font-weight: bold;
   font-family: 'Ubuntu',sans-serif;
 }
-.logo .lio
+.menu-bar .logo .lio
 {
   color: crimson;
   font-size: 35px;
   font-weight: bold;
   font-family: 'Ubuntu',sans-serif;
 }
-.nav
+.menu-bar nav, .menu-bar-fix nav
 {
   width: 70%;
   padding-top: 15px;
   text-align: right;
-  height: auto;
   font-family: 'Ubuntu', sans-serif;
 }
 a
@@ -88,15 +99,15 @@ a
   font-weight: bold;
   font-family: 'Ubuntu',sans-serif;
 }
-.nav a:hover
+nav a:hover
 {
   cursor: pointer;
   color: crimson;
 }
 .home-content
 {
-  padding: 20%;
-  height: 80vh;
+  padding: 10% 10%;
+  height: 70vh;
   color: white;
   font-family: 'Ubuntu',sans-serif;
 }
@@ -264,8 +275,9 @@ span
 .projects-content .projects-det .p2:hover,
 .projects-content .projects-det .p3:hover
 {
+  cursor: pointer;
   background-color: crimson;
-
+  transition: 0.4s;
 
 }
 .projects-content .projects-det img
@@ -282,15 +294,11 @@ span
 /*Personal Details--Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
-  .menu-bar
-  {
-    position: inherit;
-  }
   .home-content
   {
-    padding: 0;
-    height: 40vh;
-    margin: 5% 0 0 0;
+    position: inherit;
+    padding: 30%;
+    height: auto;
     text-align: center;
   }
   .text-1
@@ -311,33 +319,41 @@ span
 /* Menu-bar -- Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
-  .logo
-  {
-    text-align: center;
-  }
-  .menu-bar, .nav, .logo
+  .menu-bar, .menu-bar-fix
   {
     padding: 0;
+    padding-top: 10px;
     display: block;
+  }
+  .toggle-btn
+  {
+    display: block;
+  }
+  .menu-bar nav, .menu-bar-fix nav
+  {
+    padding: 0;
+    display: none;
     width: 100%;
   }
-  .menu-bar .nav a
+  .menu-bar .show, .menu-bar-fix .show
+  {
+    display: inline-block;
+    width: 100%;
+  }
+  .menu-bar nav a, .menu-bar-fix nav a
   {
     display: block;
     width: 100%;
     text-align: center;
     background-color: crimson;
-  }
-  .menu-bar .nav a
-  {
     border-style: solid;
     border-width: 1px;
     border-color: #000;
   }
-  .menu-bar .nav a:hover
+  .menu-bar nav a:hover, .menu-bar-fix nav a:hover
   {
-    background: transparent;
-    border-color: crimson;
+    color: white;
+    border-color: white;
   }
 }
 @media screen and (max-width: 980px) {
