@@ -297,7 +297,7 @@ span
   .home-content
   {
     position: inherit;
-    padding: 30%;
+    padding-top: 30%;
     height: auto;
     text-align: center;
   }
@@ -322,7 +322,7 @@ span
   .menu-bar, .menu-bar-fix
   {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 20px;
     display: block;
   }
   .toggle-btn
