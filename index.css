@@ -264,6 +264,7 @@ span
 .projects-content .projects-det .p1, .projects-content .projects-det .p2,
 .projects-content .projects-det .p3
 {
+  padding: 10px;
   margin: 10px;
   border-radius: 5px;
   background-color: #222;
@@ -283,7 +284,7 @@ span
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 10%;
 }
 .projects-content .projects-det
 {
@@ -294,8 +295,10 @@ span
 @media screen and (max-width: 780px) {
   .home-content
   {
-    position: inherit;
+    display: grid;
+    place-items: center;
     padding-top: 30%;
+    padding-bottom: 30%;
     height: 100%;
     text-align: center;
   }
@@ -320,7 +323,7 @@ span
   .menu-bar, .menu-bar-fix
   {
     padding: 0;
-    padding-top: 20px;
+    padding-top: 15px;
     display: block;
   }
   .toggle-btn
