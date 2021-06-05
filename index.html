@@ -11,12 +11,21 @@
       {
         var navbar = document.getElementById('nav');
         navbar.classList.toggle('show');
+        if(navbar.className==='show')
+        {
+          document.getElementById('toggle-btn').style.transform='rotate(90deg)';
+        }
+        else
+        {
+          document.getElementById('toggle-btn').style.transform='rotate(360deg)';
+        }
+
       }
     </script>
   </head>
   <body id="body">
     <div class="menu-bar" id="menu">
-      <div class="toggle-btn" onclick="toggleFun();">
+      <div id="toggle-btn" class="toggle-btn" onclick="toggleFun();">
         <span></span>
         <span></span>
         <span></span>
