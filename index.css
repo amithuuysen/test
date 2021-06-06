@@ -53,7 +53,7 @@ body
   padding: 15px 30px;
   width: 100%;
   display: flex;
-  transform: 1s;
+  transition: 0.5s;
 }
  .menu-bar-fix .logo .lio
  {
@@ -104,7 +104,7 @@ nav a:hover
   cursor: pointer;
   color: crimson;
 }
-.home-content
+.home-section
 {
   padding: 10% 10%;
   height: 100%;
@@ -136,10 +136,8 @@ nav a:hover
   height: 50px;
   width: 150px;
   margin-top: 25px;
-  border-style: solid;
   border-radius: 5px;
-  border-width: 2px;
-  border-color: crimson;
+  border: solid 2px crimson;
   background-color: crimson;
   color: white;
   font-size: 20px;
@@ -153,20 +151,20 @@ nav a:hover
   transition: 0.5s;
 }
 
-.about-content
+.about-section
 {
   width: 100%;
   background: white;
   font-family: 'Ubuntu',sans-serif;
 }
-.about-content h1
+.about-section h1
 {
   margin: 0;
   padding-top: 80px;
   font-size: 40px;
   text-align: center;
 }
-.about-content .footer
+.about-section .footer
 {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -199,7 +197,7 @@ nav a:hover
   font-weight: bold;
   font-size: 25px;
 }
-span
+.about-section span
 {
   color: crimson;
 }
@@ -214,10 +212,8 @@ span
   height: 50px;
   width: 210px;
   margin-top: 25px;
-  border-style: solid;
   border-radius: 5px;
-  border-width: 2px;
-  border-color: crimson;
+  border: solid 2px crimson;
   background-color: crimson;
   color: white;
   font-size: 20px;
@@ -231,22 +227,22 @@ span
   color: crimson;
 }
 
-.projects-content
+.projects-section
 {
-  font-family: 'ubuntu',sans-serif;;
+  font-family: 'ubuntu',sans-serif;
   background-color: black;
   color:white;
   height: 96vh;
   width: 100%;
 }
-.projects-content h1
+.projects-section h1
 {
   margin: 0;
   padding-top: 80px;
   font-size: 40px;
   text-align: center;
 }
-.projects-content .footer
+.projects-section .footer
 {
   padding-top: 20px;
   padding-bottom: 70px;
@@ -255,14 +251,14 @@ span
   color: crimson;
   text-align: center;
 }
-.projects-content .projects-det
+.projects-section .projects-det
 {
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
 }
-.projects-content .projects-det .p1, .projects-content .projects-det .p2,
-.projects-content .projects-det .p3
+.projects-section .projects-det .p1, .projects-section .projects-det .p2,
+.projects-section .projects-det .p3
 {
   padding: 10px;
   margin: 10px;
@@ -270,30 +266,124 @@ span
   background-color: #222;
 
 }
-.projects-content .projects-det .p1:hover,
-.projects-content .projects-det .p2:hover,
-.projects-content .projects-det .p3:hover
+.projects-section .projects-det .p1:hover,
+.projects-section .projects-det .p2:hover,
+.projects-section .projects-det .p3:hover
 {
   cursor: pointer;
   background-color: crimson;
   transition: 0.4s;
 
 }
-.projects-content .projects-det img
+.projects-section .projects-det img
 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 15%;
 }
-.projects-content .projects-det
+.projects-section .projects-det
 {
   text-align: center;
+}
+
+
+.skills-section
+{
+  height: 96vh;
+  background-color: white;
+  font-family: 'ubuntu',sans-serif;
+
+}
+.skills-section h1
+{
+  margin: 0;
+  padding-top: 80px;
+  font-size: 40px;
+  text-align: center;;
+}
+.skills-section .footer
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+}
+.skills-section .skills-det
+{
+  padding: 4%;
+  width: 100%;
+  display: flex;
+  border: solid 3px green;
+}
+.skills-det .skills-para
+{
+  padding: 10px;
+  width: 50%;
+}
+.skills-para .skills-header
+{
+  font-weight: bold;
+  font-size: 25px;
+}
+.skills-para p
+{
+  font-size: 18px;
+  text-align: justify;
+}
+.skills-set
+{
+  padding: 10px;
+  width: 50%;
+}
+.skills-set span
+{
+  font-size: 20px;
+}
+.readmore
+{
+  height: 50px;
+  width: 150px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: solid 2px crimson;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu',sans-serif;
+}
+.readmore:hover
+{
+  background-color: white;
+  color: crimson;
+  transition: 0.5s;
+}
+.skills-section .skills-set div
+{
+  padding: 1px;
+  margin: 5px;
+  margin-top: 10px;
+}
+.skills-set .left
+{
+  padding-left: 5px;
+}
+.skills-set .right
+{
+  float: right;
+}
+.skills-set .bar-python
+{
+  height: 5px;
+  background-image: linear-gradient(to right, crimson 90%, #999 10%);
 }
 /*Personal Details--Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
-  .home-content
+  .home-section
   {
     display: grid;
     place-items: center;
@@ -362,11 +452,11 @@ span
   }
 }
 @media screen and (max-width: 980px) {
-  .about-content
+  .about-section
   {
     height: auto;
   }
-  .about-content .footer
+  .about-section .footer
   {
     padding-bottom: 0px;
   }
@@ -378,7 +468,7 @@ span
     text-align: center;
     margin: 0;
   }
-  .about-content img
+  .about-section img
   {
     float: none;
     display: block;
@@ -400,13 +490,30 @@ span
 
 @media screen and (max-width:780px)
 {
-  .projects-content
+  .projects-section
   {
     height: auto;
   }
-  .projects-content .projects-det
+  .projects-section .projects-det
   {
     display: inline-block;
 
+  }
+  .skills-section
+  {
+    height: auto;
+  }
+  .skills-section .skills-det
+  {
+    display: inline-block;
+  }
+  .skills-det .skills-para
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .skills-det .skills-set
+  {
+    width: 100%;
   }
 }
