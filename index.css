@@ -374,10 +374,30 @@ nav a:hover
 {
   float: right;
 }
-.skills-set .bar-python
+.skills-set .bar-py
 {
   height: 5px;
   background-image: linear-gradient(to right, crimson 90%, #999 10%);
+}
+.skills-set .bar-c
+{
+  height: 5px;
+  background-image: linear-gradient(to right, crimson 80%, #999 20%);
+}
+.skills-set .bar-da
+{
+  height: 5px;
+  background-image: linear-gradient(to right, crimson 75%, #999 25%);
+}
+.skills-set .bar-dv
+{
+  height: 5px;
+  background-image: linear-gradient(to right, crimson 85%, #999 15%);
+}
+.skills-set .bar-hc
+{
+  height: 5px;
+  background-image: linear-gradient(to right, crimson 85%, #999 15%);
 }
 /*Personal Details--Mobile Viewport*/
 
