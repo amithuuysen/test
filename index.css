@@ -264,6 +264,7 @@ nav a:hover
   margin: 10px;
   border-radius: 5px;
   background-color: #222;
+  transition: transform .5s ease;
 
 }
 .projects-section .projects-det .p1:hover,
@@ -273,14 +274,13 @@ nav a:hover
   cursor: pointer;
   background-color: crimson;
   transition: 0.4s;
-
 }
 .projects-section .projects-det img
 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 10%;
 }
 .projects-section .projects-det
 {
@@ -290,7 +290,7 @@ nav a:hover
 
 .skills-section
 {
-  height: 96vh;
+  height: 100vh;
   background-color: white;
   font-family: 'ubuntu',sans-serif;
 
@@ -399,6 +399,75 @@ nav a:hover
   height: 5px;
   background-image: linear-gradient(to right, crimson 85%, #999 15%);
 }
+
+.certs-section
+{
+  font-family: 'ubuntu',sans-serif;
+  background-color: black;
+  color:white;
+  height: 100vh;
+  width: 100%;
+}
+.certs-section h1
+{
+  margin: 0;
+  padding-top: 80px;
+  font-size: 40px;
+  text-align: center;
+}
+.certs-section .footer
+{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+}
+.certs-det
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.certs-det .certs-img
+{
+  margin: 5px;
+  background-color: #222;
+  border-radius: 4px;
+  flex: 30%;
+  padding: 0 4px;
+  transition: 0.3s;
+}
+.certs-det .certs-img img
+{
+  padding: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  transition: transform .5s ease;
+}
+.certs-det .certs-img:hover
+{
+  border: solid 1px white;
+  background-color: crimson;
+}
+.certs-det .certs-img div
+{
+  transition: transform .5s ease;
+}
+.certs-det .certs-img:hover img
+{
+  transform: scale(1.2);
+}
+.cert-desc
+{
+  padding-bottom: 5px;
+  text-align: center;
+}
+
 /*Personal Details--Mobile Viewport*/
 
 @media screen and (max-width: 780px) {
@@ -524,6 +593,10 @@ nav a:hover
   }
   .skills-section .skills-det
   {
+    padding: 10px;
+  }
+  .skills-section .skills-det
+  {
     display: inline-block;
   }
   .skills-det .skills-para
@@ -534,5 +607,9 @@ nav a:hover
   .skills-det .skills-set
   {
     width: 100%;
+  }
+  .skills-set span
+  {
+    font-size: 15px;
   }
 }
