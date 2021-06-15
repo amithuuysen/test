@@ -264,7 +264,6 @@ nav a:hover
   margin: 10px;
   border-radius: 5px;
   background-color: #222;
-  transition: transform .5s ease;
 
 }
 .projects-section .projects-det .p1:hover,
@@ -575,7 +574,12 @@ nav a:hover
     text-align: justify;
   }
 }
-
+@media screen and (max-width:1000px) {
+  .certs-det .certs-img
+  {
+    flex: 40%;
+  }
+}
 @media screen and (max-width:780px)
 {
   .projects-section
@@ -611,5 +615,12 @@ nav a:hover
   .skills-set span
   {
     font-size: 15px;
+  }
+
+}
+@media screen and (max-width:500px){
+  .certs-det .certs-img
+  {
+    flex: 50%;
   }
 }
