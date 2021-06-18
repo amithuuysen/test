@@ -446,7 +446,7 @@ nav a:hover
   margin-right: auto;
   width: 50%;
   height: auto;
-  transition: transform .5s ease;
+  transition: all .5s ease-in-out;
 }
 .certs-det .certs-img:hover
 {
@@ -455,11 +455,9 @@ nav a:hover
 }
 .certs-det .certs-img div
 {
-  transition: transform .5s ease;
 }
 .certs-det .certs-img:hover img
 {
-  transform: scale(1.2);
 }
 .cert-desc
 {
@@ -615,6 +613,10 @@ nav a:hover
   .skills-set span
   {
     font-size: 15px;
+  }
+  .certs-section
+  {
+    height: auto;
   }
 
 }
