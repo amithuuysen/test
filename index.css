@@ -106,10 +106,19 @@ nav a:hover
 }
 .home-section
 {
-  padding: 10% 10%;
   height: 100%;
   color: white;
+  text-align: center;
   font-family: 'Ubuntu',sans-serif;
+}
+.home-det
+{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
 }
 .text-1
 {
@@ -150,21 +159,14 @@ nav a:hover
   color: crimson;
   transition: 0.5s;
 }
-
-.about-section
-{
-  width: 100%;
-  background: white;
-  font-family: 'Ubuntu',sans-serif;
-}
-.about-section h1
+h1
 {
   margin: 0;
   padding-top: 80px;
   font-size: 40px;
   text-align: center;
 }
-.about-section .footer
+.footer
 {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -173,14 +175,23 @@ nav a:hover
   color: crimson;
   text-align: center;
 }
+.about-section
+{
+  width: 100%;
+  height: auto;
+  background: white;
+  font-family: 'Ubuntu',sans-serif;
+}
 .about-pd
 {
   display: flex;
+  height: auto;
 }
 .about-pd img
 {
   margin: 30px;
-  width: 35%;
+  width: 30%;
+  height: auto;
   border-radius: 5px;
   border: solid 2px black;
 
@@ -232,27 +243,13 @@ nav a:hover
   font-family: 'ubuntu',sans-serif;
   background-color: black;
   color:white;
-  height: 96vh;
+  min-height: 90vh;
+  height: auto;
   width: 100%;
-}
-.projects-section h1
-{
-  margin: 0;
-  padding-top: 80px;
-  font-size: 40px;
-  text-align: center;
-}
-.projects-section .footer
-{
-  padding-top: 20px;
-  padding-bottom: 70px;
-  font-size: 20px;
-  font-weight: bold;
-  color: crimson;
-  text-align: center;
 }
 .projects-section .projects-det
 {
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
@@ -272,7 +269,7 @@ nav a:hover
 {
   cursor: pointer;
   background-color: crimson;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 .projects-section .projects-det img
 {
@@ -289,26 +286,11 @@ nav a:hover
 
 .skills-section
 {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: white;
   font-family: 'ubuntu',sans-serif;
 
-}
-.skills-section h1
-{
-  margin: 0;
-  padding-top: 80px;
-  font-size: 40px;
-  text-align: center;;
-}
-.skills-section .footer
-{
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: crimson;
-  text-align: center;
 }
 .skills-section .skills-det
 {
@@ -404,24 +386,8 @@ nav a:hover
   font-family: 'ubuntu',sans-serif;
   background-color: black;
   color:white;
-  height: 100vh;
   width: 100%;
-}
-.certs-section h1
-{
-  margin: 0;
-  padding-top: 80px;
-  font-size: 40px;
-  text-align: center;
-}
-.certs-section .footer
-{
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  color: crimson;
-  text-align: center;
+  min-height: 100vh;
 }
 .certs-det
 {
@@ -444,61 +410,161 @@ nav a:hover
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: auto;
-  transition: all .5s ease-in-out;
+  width: 200px;
+  height: 150px;
+  transition: 0.5s;
 }
 .certs-det .certs-img:hover
 {
-  border: solid 1px white;
   background-color: crimson;
-}
-.certs-det .certs-img div
-{
-}
-.certs-det .certs-img:hover img
-{
 }
 .cert-desc
 {
+  font-weight: bold;
   padding-bottom: 5px;
   text-align: center;
 }
+.contact-section
+{
+  font-family: 'Ubuntu',sans-serif;
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+}
+.contact-det
+{
+  font-family: 'Poppins';
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+}
+.contact-info
+{
 
+  width: 42%;
+  margin-left: 6%;
+  margin-right: 2%;
+  padding: 0 10px;
+}
+.contact-header
+{
+  font-weight: bold;
+  font-size: 20px;
+}
+.contact-info p
+{
+  font-size: 16px;
+}
+.name
+{
+  display: flex;
+  padding-top: 15px;
+}
+.name img
+{
+  margin: auto 0px;
+  width: 5%;
+  height: 5%;
+}
+.name div
+{
+  font-size: 17px;
+  padding: 5px 20px;
+}
+.contact-message
+{
+  width: 42%;
+  margin-right: 6%;
+  margin-left: 2%;
+}
+input
+{
+  font-size: 18px;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.man
+{
+  width: 100%;
+  padding: 20px 0px;
+}
+.man input
+{
+  width: 49.5%;
+  height: 40px;
+}
+.sub
+{
+}
+.sub input
+{
+  width: 100%;
+}
+textarea
+{
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 10px;
+  height: 100px;
+  font-family: 'Poppins'
+}
+.sm
+{
+  height: 50px;
+  width: 180px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: solid 2px crimson;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  transition: 0.5s;
+}
+.sm:hover
+{
+  background-color: transparent;
+  color: crimson;
+}
 /*Personal Details--Mobile Viewport*/
 
-@media screen and (max-width: 780px) {
-  .home-section
-  {
-    display: grid;
-    place-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    height: 100%;
-    text-align: center;
-  }
+@media screen and (max-width: 940px) {
   .text-1
   {
     font-size: 20px;
   }
   .text-2
   {
-    font-size: 55px;
+    font-size: 50px;
   }
   .text-3
   {
     font-size: 25px;
+  }
+  .hireme
+  {
+    margin-bottom: 25%;
   }
 
 }
 
 /* Menu-bar -- Mobile Viewport*/
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 930px) {
+  .menu-bar-fix .logo
+  {
+    margin: auto 0;
+  }
   .menu-bar, .menu-bar-fix
   {
     padding: 0;
-    padding-top: 15px;
+    padding-top:10px;
+    height: 60px;
     display: block;
   }
   .toggle-btn
@@ -507,7 +573,7 @@ nav a:hover
   }
   .menu-bar nav, .menu-bar-fix nav
   {
-    padding: 0;
+    padding-top: 20px;
     display: none;
     width: 100%;
   }
@@ -589,6 +655,9 @@ nav a:hover
     display: inline-block;
 
   }
+}
+@media screen and (max-width:1000px)
+{
   .skills-section
   {
     height: auto;
@@ -614,7 +683,15 @@ nav a:hover
   {
     font-size: 15px;
   }
+}
+@media screen and (max-width:780px) {
+
+}
   .certs-section
+  {
+    height: auto;
+  }
+  .contact-section
   {
     height: auto;
   }
@@ -624,5 +701,32 @@ nav a:hover
   .certs-det .certs-img
   {
     flex: 50%;
+  }
+}
+@media screen and (max-width:1100px){
+  .contact-det
+  {
+    display: block;
+    height: auto;
+  }
+  .contact-info
+  {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-message
+  {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width:500px){
+  .man input
+  {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }

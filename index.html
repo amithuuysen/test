@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Personal Blog - Amithu Uysen </title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="index.css"/>
     <script type="text/javascript">
       function toggleFun()
@@ -37,6 +38,7 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
       </nav>
       <script>
         window.onscroll = function() {myFunction()};
@@ -54,10 +56,12 @@
       </script>
     </div>
     <section class="home-section" id="home">
+      <div class="home-det">
         <div class="text-1">Hello, my name is</div>
         <div class="text-2">Amithu Uysen</div>
         <div class="text-3">And I'm a <span class="typing">Data Analyst</span></div>
         <button type="button" name="button" class="hireme">Hire Me</button>
+      </div>
     </section>
 
     <section class="about-section" id="about">
@@ -86,28 +90,34 @@
       <div class="footer">--  What i done  --</div>
       <div class="projects-det">
         <div class="p1">
-          <img src="face-white.png" alt="">
-          <h2>Face Recognition</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
-            sit laboriosam voluptatem nisi delectus. Facere explicabohic.
-          </p>
+          <div class="block">
+            <img src="face-white.png" alt="">
+            <h2>Face Recognition</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+              sit laboriosam voluptatem nisi delectus. Facere explicabohic.
+            </p>
+          </div>
         </div>
         <div class="p2">
-          <img src="download.png" alt="">
-          <h2>YT Video Downloader</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
-            sit laboriosam voluptatem nisi delectus. Facere explicabohic.
-          </p>
+          <div class="block">
+            <img src="download.png" alt="">
+            <h2>YT Video Downloader</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+              sit laboriosam voluptatem nisi delectus. Facere explicabohic.
+            </p>
+          </div>
         </div>
         <div class="p3">
-          <img src="ipl.png" alt="">
-          <h2>IPL Data Analysis</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
-            sit laboriosam voluptatem nisi delectus. Facere explicabohic.
-          </p>
+          <div class="block">
+            <img src="ipl.png" alt="">
+            <h2>IPL Data Analysis</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quasi ut voluptatum eveniet doloremque autem excepturi eaque,
+              sit laboriosam voluptatem nisi delectus. Facere explicabohic.
+            </p>
+          </div>
         </div>
       </div>
       </div>
@@ -195,6 +205,52 @@
             <img src="C_PS.png" alt="">
           </a>
           <div class="cert-desc">Problem Solving (Basics)</div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <h1>Contact me</h1>
+      <div class="footer">--  Get in touch  --</div>
+      <div class="contact-det">
+        <div class="contact-info">
+          <div class="contact-header">Get in Touch</div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
+            nesciunt veritatis vitae nobis?
+          </p>
+          <div class="name">
+            <img src="https://img.icons8.com/ios-glyphs/30/fa314a/gender-neutral-user.png"/>
+            <div>
+              <span><b>Name</b></span><br>
+              <span>Amithu Uysen</span>
+            </div>
+          </div>
+          <div class="name">
+            <img src="https://img.icons8.com/ios-glyphs/30/fa314a/marker--v1.png"/>
+            <div>
+              <span><b>Address</b></span><br>
+              <span>Tamilnadu,India</span>
+            </div>
+          </div>
+          <div class="name">
+            <img src="https://img.icons8.com/ios-glyphs/30/fa314a/new-post.png"/>
+            <div>
+              <span><b>Email</b></span><br>
+              <span>amithuuysen@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-message">
+          <div class="contact-header">Message me</div>
+          <div class="man">
+            <input type="text" name="" placeholder="Name">
+            <input type="email" name="" placeholder="Email">
+          </div>
+          <div class="sub">
+            <input type="text" name="" placeholder="Subject">
+            <textarea name="" placeholder="Message"></textarea>
+          </div>
+          <button type="button" class="sm">Send message</button>
         </div>
       </div>
     </section>
