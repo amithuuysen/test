@@ -556,14 +556,14 @@ textarea
 /* Menu-bar -- Mobile Viewport*/
 
 @media screen and (max-width: 930px) {
-  .menu-bar-fix .logo
+  .menu-bar-fix .logo, .menu-bar .logo
   {
+    padding: 10px;
     margin: auto 0;
   }
   .menu-bar, .menu-bar-fix
   {
     padding: 0;
-    padding-top:10px;
     height: 60px;
     display: block;
   }
@@ -588,7 +588,9 @@ textarea
     width: 100%;
     text-align: center;
     background-color: crimson;
-    border: solid 1px #000;
+    border-style: none;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
   }
   .menu-bar nav a:hover, .menu-bar-fix nav a:hover
   {
